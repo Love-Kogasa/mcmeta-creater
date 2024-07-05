@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+  <head>
+    <meta name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"/>
+    <meta charset="UTF-8"/>
+    <meta name="description" content="Minecraft 包清单生成器
+    manifest.json 生成
+    pack.mcmeta 生成">
+    <title>Minecraft 包清单生成器</title>
+    <link rel="stylesheet" type="text/css" href="src/json.css">
+    <link rel="stylesheet" type="text/css" href="src/index.css">
+    <script src="lib/uuid.js"></script>
+    <script src="lib/json-highlight.js"></script>
+    <script src="lib/download.js"></script>
+    <script src="js/be.js"></script>
+  </head>
+  <body>
+    <div class="main">
+      <nav>
+        <a>基岩版</a> |
+        <a href="java.html">Java版</a> |
+        <a href="create.html">创建页面</a>
+      </nav>
+      <h2>基岩版包清单</h2>
+      <hr>
+      <b>包名称</b> : <input type="text"
+        oninput="setHeader( 'name', this.value )"><br>
+      <b>包介绍</b> : <input type="text"
+        oninput="setHeader( 'description', this.value )"><br>
+      <b>包最低版本</b> : <input type="text" value="1.13.20"
+        oninput="version( this.value )"><br>
+      <b>包类型</b> :
+        <button onclick="setType()"> 资源包 </button>
+        <button onclick="setType(true)"> 行为包 </button>
+      <hr>
+      <pre id="code">{}</pre>
+      <button onclick="copy()"> 复制JSON </button>
+      <hr>
+      <button onclick="save()"> 下载文件 </button>
+      <script>
+        preOnload(document.getElementById("code"))
+      </script>
+    </div>
+  </body>
+</html>

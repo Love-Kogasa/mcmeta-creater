@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+  <head>
+    <meta name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"/>
+    <meta charset="UTF-8"/>
+    <meta name="description" content="Minecraft 包清单生成器
+    manifest.json 生成
+    pack.mcmeta 生成">
+    <title>MCM-PAGE</title>
+    <link rel="stylesheet" type="text/css" href="src/json.css">
+    <link rel="stylesheet" type="text/css" href="src/index.css">
+    <script src="js/create.js"></script>
+  </head>
+  <body>
+    <div class="main">
+      <nav>
+        <a href="index.html">返回主页</a> |
+        <a href="#">创建页面</a>
+      </nav>
+      <h2>创建 MCM-PAGE</h2>
+      <hr>
+        <b>页面标题(必填) : </b>
+          <input type="text"
+            oninput="set('title',this.value)"><br>
+        <b>页面正文(必填) : </b><br>
+          <textarea style="
+            display : block;
+            width : 86%;"
+            oninput="set('main',this.value)">balabala</textarea>
+        <b>附文链接(选填) : </b>
+          <input type="text"
+            oninput="set('link',this.value)"><br>
+        <b>附文按钮(选填) : </b>
+          <input type="text"
+            oninput="set('btn',this.value)"><br>
+      <hr>
+        <b>链接 : </b>
+        <pre id="link">Wait input( 等待输入 )</pre>
+      <hr>
+      <b>小提示: 支持markdown哦w</b><br>
+      如果样式不显示请把URL后面的/去掉<br>
+      <button onclick="copy()">复制</button>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+  <head>
+    <meta name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"/>
+    <meta charset="UTF-8"/>
+    <meta name="description" content="Minecraft 包清单生成器
+    manifest.json 生成
+    pack.mcmeta 生成">
+    <title>MCM-PAGE</title>
+    <link rel="stylesheet" type="text/css" href="src/json.css">
+    <link rel="stylesheet" type="text/css" href="src/index.css">
+    <script src="js/read.js"></script>
+    <script src="lib/marked.js"></script>
+    <script src="js/page.js"></script>
+  </head>
+  <body>
+    <div class="main">
+      <nav>
+        <a href="index.html">返回主页</a> |
+        <a href="create.html">创建页面</a>
+      </nav>
+      <h2 id="title">Loading...</h2>
+      <hr>
+        <div id="main">Loading...</div>
+      <hr>
+      <div align="right">
+        <a btn id="link" style="
+          text-decoration: none;
+        " href="javascript:alert('load')">Link</a>
+      </div>
+      <script>
+        pageMain()
+      </script>
+    </div>
+  </body>
+</html>
