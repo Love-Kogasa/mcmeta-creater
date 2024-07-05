@@ -1,0 +1,23 @@
+button, [ btn ], [ button ] {
+    @extend [nb];
+    background-color : rgba( 255, 255, 255, 0.7 );
+    transition : background-color 0.5s ease-in-out;
+    &:active,
+    &:hover {
+        background-color : rgba( 255, 255, 255, 0.9 );
+    }
+    padding : {
+        left : 7px;
+        right : 7px;
+    }
+}
+textarea {
+    @extend button;
+}
+input {
+    &[ type="text" ],
+    &[ type="button" ],
+    &[ type="submit" ] {
+        @extend button;
+    }
+}

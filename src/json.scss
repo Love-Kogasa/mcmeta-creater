@@ -1,0 +1,15 @@
+@import "method";
+
+.json-key,
+.json-string {
+    @include bg( 125, 255, 125 );
+}
+
+.json-null,
+.json-boolean {
+    @include bg( 238, 130, 240 );
+}
+
+.json-number {
+    @include bg( 255, 100, 100 );
+}

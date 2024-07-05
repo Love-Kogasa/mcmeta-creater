@@ -1,0 +1,37 @@
+[nb], [no-border] {
+  border: none;
+}
+[nb]:focus, [no-border]:focus {
+  outline: none;
+  border: none;
+}
+
+.json-key,
+.json-string {
+  color: rgb(125, 255, 125);
+  transition: background-color 0.5s ease-in-out;
+}
+.json-key:hover,
+.json-string:hover {
+  background-color: rgba(125, 255, 125, 0.5);
+}
+
+.json-null,
+.json-boolean {
+  color: rgb(238, 130, 240);
+  transition: background-color 0.5s ease-in-out;
+}
+.json-null:hover,
+.json-boolean:hover {
+  background-color: rgba(238, 130, 240, 0.5);
+}
+
+.json-number {
+  color: rgb(255, 100, 100);
+  transition: background-color 0.5s ease-in-out;
+}
+.json-number:hover {
+  background-color: rgba(255, 100, 100, 0.5);
+}
+
+/*# sourceMappingURL=json.css.map */

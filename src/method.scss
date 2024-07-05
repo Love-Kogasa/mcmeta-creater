@@ -1,0 +1,14 @@
+[nb], [no-border] {
+    border : none;
+    &:focus {
+        outline : none;
+        border : none;
+    }
+}
+@mixin bg( $r : 255, $g : 255, $b : 255 ){
+    color : rgb( $r, $g, $b );
+    transition : background-color 0.5s ease-in-out;
+    &:hover {
+        background-color : rgba( $r, $g, $b, 0.5 );
+    }
+}
