@@ -3,7 +3,7 @@ var manifest = JSON.parse(`
 {
     "pack" : {
         "description" : "",
-        "format_version" : 3
+        "pack_format" : 3
     }
 }
 `)
